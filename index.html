@@ -35,7 +35,9 @@
         <nav class="nav-page">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-item-link-studio" href="./index.html">Studio</a>
+              <a class="nav-item-link link-studio" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-item-link" href="">Portfolio</a>
@@ -65,6 +67,7 @@
           </svg>
         </button>
       </div>
+      <!--------------Mobile Menue ------------------->
       <div class="mob-menu">
         <div>
           <button type="button" class="menu-close">
@@ -75,7 +78,7 @@
           <nav>
             <ul class="mob-nav-list">
               <li class="mob-nav-item">
-                <a class="mob-nav-item-link-studio" href="./index.html"
+                <a class="mob-nav-item-link mob-link-studio" href="./index.html"
                   >Studio</a
                 >
               </li>
@@ -92,15 +95,15 @@
           <address class="mob-address-page">
             <ul class="mob-address-list">
               <li class="mob-address-item">
+                <a class="mob-address-item-link phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
                 <a
                   class="mob-address-item-link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="mob-address-item-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
                 >
               </li>
             </ul>
@@ -418,7 +421,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/banking_app_mob.jpg    1x,
                       ./images/our_portfolio/banking_app_mob_2x.jpg 2x
@@ -459,7 +462,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/cashless_payment_mob.jpg    1x,
                       ./images/our_portfolio/cashless_payment_mob_2x.jpg 2x
@@ -500,7 +503,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/meditation_app_mob.jpg    1x,
                       ./images/our_portfolio/meditation_app_mob_2x.jpg 2x
@@ -542,7 +545,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/taxi_service_mob.jpg    1x,
                       ./images/our_portfolio/taxi_service_mob_2x.jpg 2x
@@ -583,7 +586,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/screen_illustrations_mob.jpg    1x,
                       ./images/our_portfolio/screen_illustrations_mob_2x.jpg 2x
@@ -624,7 +627,7 @@
                     "
                   />
                   <source
-                    media="(min-width: 320px)"
+                    media="(max-width: 767px)"
                     srcset="
                       ./images/our_portfolio/online_courses_mob.jpg    1x,
                       ./images/our_portfolio/online_courses_mob_2x.jpg 2x
@@ -721,7 +724,7 @@
       </div>
     </footer>
     <!------------------------ Modal --------------------->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="close-icon" width="8" height="8">
