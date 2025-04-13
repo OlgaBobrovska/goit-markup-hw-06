@@ -202,11 +202,15 @@ button {
   pointer-events: auto;
 }
 .menu-close {
-  display: block;
+  display: flex;
+  /* display: block; */
+  width: 24px;
+  height: 24px;
   margin-left: auto;
   border-radius: 100%;
   background-color: #e7e9fc;
   align-items: center;
+  justify-content: center;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -398,6 +402,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 8px;
 }
 .features-sub-title-text {
   /*  font-weight: 400; */
@@ -977,6 +982,9 @@ button {
   .container {
     max-width: 768px;
   }
+  .header-container {
+    justify-content: flex-start;
+  }
   .team .container,
   .footer-container {
     max-width: 584px;
@@ -985,9 +993,12 @@ button {
   .logo {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
-    /* margin-right: 120px; */
+    margin-right: 120px;
   }
   .menu-open {
+    display: none;
+  }
+  .mob-menu {
     display: none;
   }
   .nav-page {
@@ -1003,6 +1014,7 @@ button {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    margin-left: 120px;
   }
   .address-item-link {
     font-weight: 400;
@@ -1202,21 +1214,29 @@ button {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header-container {
+    justify-content: flex-start;
+  }
   .team .container,
   .footer .container {
     max-width: 1158px;
   }
+  /****************** Header ***************/
   .logo {
     padding-top: 24px;
     padding-bottom: 24px;
-    /* margin-right: 76px; */
+    margin-right: 0;
   }
   .menu-open {
+    display: none;
+  }
+  .mob-menu {
     display: none;
   }
   .nav-page {
     display: flex;
     align-items: center;
+    margin-left: 76px;
   }
   .nav-list {
     display: flex;
@@ -1227,6 +1247,7 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-left: 332px;
   }
 
   .address-item-link {
@@ -1323,6 +1344,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+    row-gap: 48px;
   }
 
   .portfolio-item {
